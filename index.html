@@ -3,434 +3,406 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Recycle 2 Michael — Cardiff waste Removal</title>
+
+<title>Recycle 2 Michael | Quality Pre-Loved Furniture Cardiff</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f7f7f7;
-        color: #222;
-    }
 
-    /* HERO */
-.hero {
-    background: linear-gradient(to bottom, #f7f7f7 0%, #ffffff 40%);
-    padding: 20px 20px;
-    text-align: center;
-    border-bottom: none;
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
+    color:#222;
+    line-height:1.6;
 }
 
-.hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-}
-    .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 25px;
-    }
-    .call-btn {
-        display: inline-block;
-        background: #2b7cff;
-        color: #fff;
-        padding: 15px 28px;
-        border-radius: 8px;
-        font-size: 1.2rem;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .hero img {
-        width: 100%;
-        max-width: 520px;
-        margin-top: 25px;
-        border-radius: 12px;
-    }
-/* TRUST */
-.trust {
-    background: #fafafa;
-    padding: 0 20px 40px;     /* FIXED: no space above the image */
-    text-align: center;
-    margin-top: 40px;    /* your chosen divider spacing */
+h1,h2,h3{
+    color:#0f172a;
 }
 
-.trust img {
-    width: 400px;
-    border-radius: 30%;
-    margin-bottom: 15px;
+section{
+    padding:60px 20px;
 }
 
-.trust p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
+/* HERO */
+
+.hero{
+    text-align:center;
+    background:linear-gradient(to bottom,#f7f7f7,#ffffff);
 }
 
-    /* SERVICES */
-    .services {
-        padding: 40px 20px;
-        background: #f5f5f5;
-    }
-    .services h2 {
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    .service-list {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    .service-list div {
-        background: #f0f0f0;
-        padding: 15px;
-        margin-bottom: 12px;
-        border-radius: 8px;
-        font-size: 1.1rem;
-    }
-    /* GALLERY */
-    .gallery {
-        padding: 40px 20px;
-        background: #f9f9f9;
-    }
-    .gallery h2 {
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 12px;
-    }
-    .gallery-grid img {
-        width: 100%;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-   /* CONTACT */
-.contact {
-    padding: 40px 20px;
-    background: #f3f3f3;
-    text-align: center;
+.hero h1{
+    font-size:2.8rem;
+    margin-bottom:15px;
 }
 
-.contact h2 {
-    margin-bottom: 20px;
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
 }
 
-.contact p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+.hero img{
+    max-width:700px;
+    width:100%;
+    margin-top:30px;
+    border-radius:14px;
 }
 
-/* Center both buttons */
-.contact a {
-    display: inline-block;
-    margin: 10px auto;
+/* ABOUT */
+
+.about{
+    background:#ffffff;
+    text-align:center;
 }
 
-/* Add spacing under the call button */
-.contact .call-btn {
-    margin-bottom: 20px;
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
 }
 
-.whatsapp-btn {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background: #25D366;
-    padding: 15px 28px;   /* MATCHES CALL BUTTON */
-    border-radius: 8px;   /* MATCHES CALL BUTTON */
-    font-size: 1.2rem;    /* MATCHES CALL BUTTON */
-    margin: 10px auto;
-}
-    
-/* Correct small WhatsApp icon */
-.wa-icon {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 0;
+/* CATEGORIES */
+
+.categories{
+    background:#f3f4f6;
+    text-align:center;
 }
 
-    /* LIGHTBOX */
-    #lightbox {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0,0,0,0.8);
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
-    #lightbox img {
-        max-width: 90%;
-        max-height: 90%;
-        border-radius: 10px;
-    }
-    /* SPACING FIXES */
-.hero {
-    padding-top: 20px;
-}
-.services,
-.gallery,
-.dogs-trust-section,
-.contact {
-    margin-top: 40px;
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
 }
 
-/* DOGS TRUST BADGE */
-.dogs-trust-section {
-    text-align: center;
-    margin: 40px 0;
+.category-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    font-weight:bold;
 }
 
-.dt-badge {
-    display: inline-block;
-    text-align: center;
-    padding: 10px 14px;
-    background: #fff8cc;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    text-decoration: none;
-    color: #222;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    margin-top: 10px;
+/* ITEMS */
+
+.items{
+    text-align:center;
+    background:white;
 }
 
-.dt-badge:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+.items-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
 }
 
-.dt-text {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-/* DOGS TRUST CAROUSEL */
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 20px;
-    border-radius: 20px;
+.item-card{
+    background:#fff;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
-.carousel-track {
-    display: flex;
-    gap: 0;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+.item-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-.carousel-track img {
-    width: 100%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    border-radius: 20px;
+.price{
+    color:#1e3a5f;
+    font-size:1.3rem;
+    font-weight:bold;
 }
 
-/* STICKY CALL BUTTON */
-.sticky-call {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #2b7cff;
-    color: #fff;
-    padding: 14px 22px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    z-index: 9999;
-}
-/* ITEMS GRID WITH IMAGES */
-.items-grid {
-    margin-top: 40px;
-    text-align: center;
+/* WHY US */
+
+.why-us{
+    background:#f3f4f6;
 }
 
-.items-grid h2 {
-    margin-bottom: 25px;
+.why-grid{
+    max-width:900px;
+    margin:auto;
 }
 
-.items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+.why-grid div{
+    background:white;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:10px;
 }
 
-.item-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* GALLERY */
+
+.gallery{
+    background:white;
 }
 
-.item-card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.gallery h2{
+    text-align:center;
 }
 
-.item-card h3 {
-    font-size: 1rem;
-    margin-bottom: 6px;
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px;
 }
 
-.item-card .price {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #2b7cff;
+.gallery-grid img{
+    width:100%;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* DOGS TRUST */
+
+.dogs-trust{
+    text-align:center;
+    background:#fafafa;
+}
+
+.carousel{
+    overflow:hidden;
+    max-width:450px;
+    margin:auto;
+}
+
+.carousel-track{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+}
+
+.carousel-track img{
+    width:100%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+    border-radius:15px;
+}
+
+/* LOCATION */
+
+.location{
+    text-align:center;
+    background:white;
+}
+
+.location img{
+    max-width:300px;
+    width:100%;
+    border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    background:#1e293b;
+    color:white;
+}
+
+.contact h2{
+    color:white;
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.85);
+}
+
+#lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
 }
 
 </style>
 
 <script>
-function openLightbox(src) {
-    const lb = document.getElementById('lightbox');
-    lb.style.display = 'flex';
-    lb.querySelector('img').src = src;
+function openLightbox(src){
+    document.getElementById('lightbox').style.display='flex';
+    document.querySelector('#lightbox img').src=src;
 }
-function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
 }
 </script>
 
 </head>
 <body>
 
-<!-- HERO -->
 <section class="hero">
-    <h1>PRELOVED FURNITURE AND HOUSEHOLD GOODS</h1>
-    <p>    SALES,COLLECTIONS AND DELIVERIES OF YOUR PRELOVED GOODS</p>
-    <a class="call-btn" href="tel:07568666774">Call Michael Now</a>
-    <img src="R2MVan.png" alt="Recycle 2 Michael Van">
+    <h1>Quality Pre-Loved Furniture in Cardiff</h1>
 
+    <p>
+        Affordable sofas, wardrobes, tables, chairs and household
+        furniture. New stock arriving regularly at our Cardiff showroom.
+    </p>
+
+    shopfront.jpg
 </section>
 
-<!-- TRUST -->
-<section class="trust">
-    <img src="Mike1.png" alt="michael">
-    <p>Supporting Dogs Trust with every sale  
-       </p>
+<section class="about">
+    <h2>About Recycle 2 Michael</h2>
+
+    <p>
+        Recycle 2 Michael is an independent Cardiff furniture store
+        specialising in quality pre-loved furniture and household goods.
+        We believe great furniture deserves a second life, helping local
+        customers furnish their homes affordably while reducing waste.
+    </p>
 </section>
 
-<!-- SERVICES -->
-<section class="services">
-    <h2>GIVING YOUR PRELOVED FURNITURE A NEW HOME </h2>
-    <div class="service-list">
-        <div>Donations</div>
-        <div>Collections and deliveries</div>
-        <div> INSTALLATIONS AND ASSEMBLEY</div>
+<section class="categories">
+    <h2>Furniture Categories</h2>
+
+    <div class="category-grid">
+        <div class="category-card">Sofas</div>
+        <div class="category-card">Beds</div>
+        <div class="category-card">Wardrobes</div>
+        <div class="category-card">Dining Sets</div>
+        <div class="category-card">Storage</div>
+        <div class="category-card">Home Accessories</div>
     </div>
 </section>
-<!-- ITEMS WE SELL (GRID WITH IMAGES + PRICES) -->
-<section class="items-grid">
-    <h2>Items for Sale</h2>
 
-<div class="item-card" onclick="openLightbox('twoseater.jpg')">
-    <img src="twoseater.jpg" alt="twoseater.jpg">
-    <h3>TWO SEATER SOFA</h3>
-    <p class="price">£150</p>
-</div>
+<section class="items">
+    <h2>Current Stock</h2>
 
-<div class="item-card" onclick="openLightbox('clubchair.jpg')">
-    <img src="clubchair.jpg" alt="Washing Machine">
-    <h3>1940's french club chair</h3>
-    <p class="price">£650</p>
-</div>
+    <div class="items-grid">
 
-<div class="item-card" onclick="openLightbox('RedSofa.jpg')">
-    <img src="RedSofa.jpg" alt="SOFA VILLAGE FOR SEATER">
-    <h3>FOUR SEATER PILLAR BOX RED</h3>
-    <p class="price">£400</p>
-</div>
+        <div class="item-card" onclick="openLightbox('twoseater.jpg')">
+            <img src="twoseater.jpg">
+            <h3>Two Seater Sofa</h3>
+            <p class="price">£150</p>
+        </div>
 
-<div class="item-card" onclick="openLightbox('TwoChairs.jpg')">
-    <img src="ikeawing.jpg" alt="Washing Machine">
-    <h3>IKEA WINGBACK CHAIR</h3>
-    <p class="price">£150</p>
-</div>
+        <div class="item-card" onclick="openLightbox('clubchair.jpg')">
+            <img src="clubchair.jpg">
+            <h3>1940's French Club Chair</h3>
+            <p class="price">£650</p>
+        </div>
 
-<div class="item-card" onclick="openLightbox('kidswardrobe.jpg')">
-    <img src="kidswardrobe.jpg" alt="kidswardrobe.jpg">
-    <h3>IKEA KIDS WARDROBE</h3>
-    <p class="price">£120</p>
-</div>
+        <div class="item-card" onclick="openLightbox('RedSofa.jpg')">
+            <img src="RedSofa.jpg">
+            <h3>Four Seater Red Sofa</h3>
+            <p class="price">£400</p>
+        </div>
+
+        <div class="item-card" onclick="openLightbox('ikeawing.jpg')">
+            <img src="ikeawing.jpg">
+            <h3>IKEA Wingback Chair</h3>
+            <p class="price">£150</p>
+        </div>
+
+        <div class="item-card" onclick="openLightbox('kidswardrobe.jpg')">
+            <img src="kidswardrobe.jpg">
+            <h3>IKEA Kids Wardrobe</h3>
+            <p class="price">£120</p>
+        </div>
+
+    </div>
 
 </section>
 
+<section class="why-us">
+
+    <h2 style="text-align:center;">Why Shop With Recycle 2 Michael?</h2>
+
+    <div class="why-grid">
+        <div>Affordable Prices</div>
+        <div>Quality Pre-Loved Furniture</div>
+        <div>New Stock Arriving Regularly</div>
+        <div>Local Delivery Available</div>
+        <div>Sustainable Choice For Cardiff Homes</div>
+    </div>
+
 </section>
 
-<!-- GALLERY -->
 <section class="gallery">
-    <h2>OUR WORK SO FAR</h2>
+
+    <h2>Furniture Gallery</h2>
+
     <div class="gallery-grid">
-        <img src="dogtrustpic.jpg" onclick="openLightbox(this.src)">
-        <img src="cute.jpg" onclick="openLightbox(this.src)">
+        gallery1.jpg
+        gallery2.jpg
         <img src="gallery3.jpg" onclick="openLightbox(this.src)">
         <img src="gallery4.jpg" onclick="openLightbox(this.src)">
     </div>
+
 </section>
-<!-- DOGS TRUST BADGE -->
-<section class="dogs-trust-section">
-    <a href="https://www.dogstrust.org.uk" class="dt-badge">
-        <span class="dt-text">Dogs Trust Website</span>
-        <img src="Dogs_Trust_logo.svg" 
-             alt="Dogs_Trust_logo.svg"
-             width="250"
-             height="60">
-    </a>
-</section>
-    <!-- DOGS TRUST GALLERY -->
-<section class="trust">
-    <h2>SUPPORTING THE DOGS TRUST WITH EVERY SALE</h2>
+
+<section class="dogs-trust">
+
+    <h2>Supporting Dogs Trust With Every Sale</h2>
+
+    <p>
+        We're proud to support Dogs Trust and help contribute
+        to a great cause through our business.
+    </p>
 
     <div class="carousel">
         <div class="carousel-track">
-            <img src="mikeanddog.jpg" alt="Dogs Trust Image 1">
-            <img src="dt-15108a.jpg" alt="Dogs Trust Image 2">
-            <img src="dt-15112.jpg" alt="Dogs Trust Image 3">
-            <img src="dt-15112.jpg" alt="Dogs Trust Image 3">
+            <img src="mikeanddog.jpg">
+            <img src="dt-15108a.jpg">
+            <img src="dt-15112.jpg">
         </div>
     </div>
 
 </section>
 
+<section class="location">
+
+    <h2>Visit Our Shop</h2>
+
+    https://maps.google.com
+        <img src="R2Mmape.png" alt="Shop Location">
+    </a>
+
+    <p>
+        1A Leckwith Road<br>
+        Cardiff<br>
+        CF11 8HJ
+    </p>
+
+</section>
+
+<section class="contact">
+
+    <h2>Recycle 2 Michael</h2>
+
+    <p>
+        Quality pre-loved furniture in Cardiff.
+    </p>
+
+    <p>
+        Open 7 Days A Week
+    </p>
+
+    <p>
+        07568 666774
+    </p>
+
+</section>
+
 <div id="lightbox" onclick="closeLightbox()">
     <img src="">
-</div>
-
-<!-- CONTACT -->
-<section class="contact">
-    <h2>Contact</h2>
-    <p>Serving Cardiff & surrounding areas</p>
-    <p>Open 7 days a week</p>
-
-    <a class="call-btn" href="tel:07568666774">Call Michael</a>
-
-    <a class="whatsapp-btn" href="https://wa.me/447568666774" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="wa-icon" alt="">
-    </a>
-</section>
-<!-- Small Shop Map Section -->
-<div class="shop-map" style="margin-top:30px; text-align:center;">
-    <h3 style="margin-bottom:10px; font-size:1.2rem;">Visit Our Shop: Opening soon</h3>
-
-<a href="https://www.google.com/maps/place/Superior+Vapour+Canton/@51.4811909,-3.2011019,19z/data=!4m6!3m5!1s0x486e1b50b0721721:0x649f6ec9ff330202!8m2!3d51.4811825!4d-3.2013675!16s%2Fg%2F11cn95zh1h?entry=ttu" target="_blank">
-    <img src="R2Mmape.png" 
-         alt="Map showing shop location"
-         style="width:250px; border-radius:8px; margin-bottom:10px;">
-</a>
-
-    <p style="font-size:0.9rem; color:#555;">
-        1A Leckwith Rd, Cardiff CF11 8HJ
-    </p>
 </div>
 
 </body>
